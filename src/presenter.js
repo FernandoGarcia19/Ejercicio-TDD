@@ -1,4 +1,4 @@
-import {totalizer_cantidad, totalizer_precio_item, totalizer_impuesto} from "./totalizador";
+import {totalizer_cantidad, totalizer_precio_item, totalizer_impuesto, precio_neto} from "./totalizador";
 
 const cantidad = document.querySelector("#cantidad");
 const precio_item = document.querySelector("#precio-item")
@@ -17,5 +17,6 @@ form.addEventListener("submit", (event) => {
 
   div.innerHTML = "<p>" + totalizer_cantidad(cant) + "</p>" + 
   "<p>" + totalizer_precio_item(precioItem) + "</p>" + 
-  "<p>" + totalizer_impuesto(state) + "</p>";
+  "<p>" + totalizer_impuesto(state) + "</p>" +
+  "<p>" + precio_neto(cant, precioItem) + "</p>"
 });
