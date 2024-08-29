@@ -15,8 +15,8 @@ form.addEventListener("submit", (event) => {
   const precioItem = Number.parseInt(precio_item.value);
   const state = estado.value
 
-  div.innerHTML = "<p>" + totalizer_cantidad(cant) + "</p>" + 
-  "<p>" + totalizer_precio_item(precioItem) + "</p>" + 
-  "<p>" + totalizer_impuesto(state) + "</p>" +
-  "<p>" + precio_neto(cant, precioItem) + "</p>"
+  div.innerHTML = "<p>Cantidad: " + totalizer_cantidad(cant) + "</p>" + 
+  "<p>Precio del item: " + totalizer_precio_item(precioItem) + "</p>" + 
+  "<p>Impuesto: " + totalizer_impuesto(state) + "</p>" +
+  "<p>Precio neto: " + precio_neto(cant, precioItem) + "</p>"
 });
