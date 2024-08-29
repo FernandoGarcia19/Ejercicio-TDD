@@ -1,4 +1,7 @@
-function totalizer(cantidad){
+function totalizer_cantidad(cantidad){
     return cantidad;
 }
-export default totalizer;
+function totalizer_precio_item(precio){
+    return precio;
+}
+export {totalizer_cantidad, totalizer_precio_item};
