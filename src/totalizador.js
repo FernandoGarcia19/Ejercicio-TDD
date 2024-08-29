@@ -8,4 +8,9 @@ function totalizer_impuesto(estado){
     return estado;
 }
 
-export {totalizer_cantidad, totalizer_precio_item, totalizer_impuesto};
+function precio_neto(cant, precio){
+    return cant*precio;
+}
+
+
+export {totalizer_cantidad, totalizer_precio_item, totalizer_impuesto, precio_neto};
